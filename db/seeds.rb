@@ -9,10 +9,10 @@
 
 
 # Airports
-lax = Airport.create(name: "LAX")
-sfo = Airport.create(name: "SFO")
-nyc = Airport.create(name: "NYC")
-jfk = Airport.create(name: "JFK")
+lax = Airport.create(code: "LAX")
+sfo = Airport.create(code: "SFO")
+nyc = Airport.create(code: "NYC")
+jfk = Airport.create(code: "JFK")
 
 
 

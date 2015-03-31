@@ -7,5 +7,8 @@ class Flight < ActiveRecord::Base
       Flight.none
   end
 
+    def self.valid_airports
+    	Airport.list_codes
+    end
 
  end

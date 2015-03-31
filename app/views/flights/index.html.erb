@@ -1,11 +1,12 @@
 
+<h1> Flights! </h1>
+
 <%= form_tag flights_path, :method => 'get' do %>
 
+    <%= select_tag(:departing_flight,      options_for_select(@airport_options),   prompt: "Departing Airport" )  %>
 
-		<h1> Flight Booking </h1>
+        <%= select_tag(:arriving_flight,      options_for_select(@airport_options),   prompt: "Arriving Airport" )  %>
 
-        <%= text_field_tag :search, params[:search] %>
-
-  <%= submit_tag("Search Flights", class: "btn btn-info") %>
+    <%= submit_tag("Search Flights") %>
 
   <% end %>
