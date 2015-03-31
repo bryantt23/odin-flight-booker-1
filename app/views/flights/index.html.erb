@@ -1,1 +1,11 @@
-<h1> yooooooooooo</h1>
+
+<%= form_tag flights_path, :method => 'get' do %>
+
+
+		<h1> Flight Booking </h1>
+
+        <%= text_field_tag :search, params[:search] %>
+
+  <%= submit_tag("Search Flights", class: "btn btn-info") %>
+
+  <% end %>
